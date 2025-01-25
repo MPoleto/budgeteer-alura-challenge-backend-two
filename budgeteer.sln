@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Shared.Models", "Budgeteer.Shared.Models\Budgeteer.Shared.Models.csproj", "{B207E83A-01E6-441B-8EB2-9451F121713D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Shared.Data", "Budgeteer.Shared.Data\Budgeteer.Shared.Data.csproj", "{D082AB32-165C-483E-B6DF-1D83E6B9E339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.API", "Budgeteer.API\Budgeteer.API.csproj", "{7A586F90-11C7-4A28-9011-ECD5C328A765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37DBF494-BF5B-4226-97EF-8EF4CF5FD53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DBF494-BF5B-4226-97EF-8EF4CF5FD53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DBF494-BF5B-4226-97EF-8EF4CF5FD53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DBF494-BF5B-4226-97EF-8EF4CF5FD53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D082AB32-165C-483E-B6DF-1D83E6B9E339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D082AB32-165C-483E-B6DF-1D83E6B9E339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D082AB32-165C-483E-B6DF-1D83E6B9E339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D082AB32-165C-483E-B6DF-1D83E6B9E339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B207E83A-01E6-441B-8EB2-9451F121713D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B207E83A-01E6-441B-8EB2-9451F121713D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B207E83A-01E6-441B-8EB2-9451F121713D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B207E83A-01E6-441B-8EB2-9451F121713D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A586F90-11C7-4A28-9011-ECD5C328A765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A586F90-11C7-4A28-9011-ECD5C328A765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A586F90-11C7-4A28-9011-ECD5C328A765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A586F90-11C7-4A28-9011-ECD5C328A765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
