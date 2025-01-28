@@ -7,7 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration["ConnectionStrings:BudgetDB"];
 
-builder.Services.AddDbContext<BudgetContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+builder.Services.AddDbContext<BudgetContext>(options => 
+  options.UseMySql(connectionString, 
+    ServerVersion.AutoDetect(connectionString), 
+    x => x.MigrationsAssembly("Budgeteer.Shared.Data")));
 
 builder.Services.AddTransient<DAL<Income>>();
 builder.Services.AddTransient<DAL<Expense>>();
