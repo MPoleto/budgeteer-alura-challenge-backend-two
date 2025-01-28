@@ -5,7 +5,7 @@
 Desafio para simular o dia-a-dia de uma pessoa desenvolvedora back-end em uma empresa, com um projeto proposto para ser desenvolvido em 4 semanas.
 Projeto de uma API de controle financeiro do orçamento familiar
 
-> Descrição
+> Descrição  
 > Foi requisitada a primeira versão de uma aplicação para controle de orçamento familiar. A aplicação deve permitir que uma pessoa cadastre suas receitas e despesas do mês, bem como gerar um relatório mensal.
 > As principais funcionalidades a serem implementadas são:
 > 1. API com rotas implementadas seguindo as boas práticas do modelo REST;
@@ -21,6 +21,7 @@ Projeto de uma API de controle financeiro do orçamento familiar
 - .NET 8
 - Entity Framework Core
 - MySql
+- Insomnia
 
 ## Desenvolvimento
 
@@ -47,4 +48,35 @@ Projeto de uma API de controle financeiro do orçamento familiar
 
 #### Endpoints da API
 
-**Cadastro de receita**
+- Criar diretório *Endpoints* para os arquivos onde as rotas HTTP vão ser definidas e configuradas.
+  - Criar as classes estáticas *IncomeEndpoins*, para os endpoints referentes à receita, e *ExpenseEndpoints*, para os endpoints referentes à despesa.
+    - Usar mapGroup para o nome das rotas e diminuir a repetição.
+- Crias os diretórios *Requests* e *Responses* onde vão estar os *DTOs*
+- Adicionar serviço da classe DAL no Programs.cs
+- Chamar as classes de endpoints na Programs.cs
+
+- Requisitos do projeto:
+  - Para as receitas os endpoints iniciam com `URI/receitas`
+  - Para as despesas os endpoints iniciam com `URI/despesas`
+  - As requisições e as respostas devem ser no formato `JSON`.
+
+**Cadastro**
+  - Criar um *Record IncomeRequest (receitas)* e um *Record ExpenseRequest (despesas)* para usar nas rotas POST.
+  - Requisito do projeto: Dentro de um mesmo mês não pode ter um cadastro com a mesma descrição. 
+    - Todas as informações são obrigatórias.
+
+**Listagem**
+  - Criar um *Record IncomeResponse (receitas)* e um *Record ExpenseResponse (despesas)* para usar nas rotas GET
+  - Criar métodos para passar o objeto para DTO e usar no retorno das requisições GET
+
+**Detalhamento**
+  - As rotas GET dos endpoints para exibir os detalhes deve ser `/{id}`.
+
+**Atualização**
+  - Criar um *Record IncomeRequestUpdate* que herda de *IncomeRequest* para as receitas.
+  - Criar um *Record ExpenseRequestUpdate* que herda de *ExpenseRequest* para as despesas.
+  - Os endpoints para as rotas PUT para atualizar deve ser `/{id}`.
+  - Requisito do projeto: Possui as mesmas regras de negócio do cadastro.
+
+**Exclusão**
+  - Os endpoints para as rotas DELETE para exclusão deve ser `/{id}`.

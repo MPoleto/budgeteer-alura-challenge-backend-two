@@ -34,7 +34,7 @@ public class DAL<T> where T : class
       _context.SaveChanges();
     }
 
-    public T? RecoveryBy(Func<T, bool> condition)
+    public T? RecoverBy(Func<T, bool> condition)
     {
       return _context.Set<T>().FirstOrDefault(condition);
     }
